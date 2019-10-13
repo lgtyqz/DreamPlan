@@ -116,11 +116,11 @@ function processAnswer(){
         questionIndex++;
         if(questionIndex == questions.length - 1){
             document.getElementById("continue").innerHTML = "Finish!";
-        }else if(questionIndex >= questions.length){
-            goToResults(subject.query);
-        }else{
-            displayQuestion();
         }
+        if(questionIndex >= questions.length){
+            goToResults(subject.query);
+        }
+        displayQuestion();
     }
 }
 window.onload = function(){
