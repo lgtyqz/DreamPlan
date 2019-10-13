@@ -11,19 +11,15 @@
         <div id="bgImageHolder"></div>
         <div id="formContainer">
             <div id="form">
-                <p class="questionStart"><b>Type some keywords.</b></p>
+                <p class="questionStart" id="question"><b></b></p>
                 <!-- TODO: Put in a redirect for action attribute-->
                 <form>
-                    <textarea autofocus name="keywords" 
-                    placeholder="travel, creative, etc."></textarea>
-                    <button class="fancy">Create Schedule</button>
+                    <input type="radio" name="ans" value="0" id="r1" class="a1"><span id="a1" class="a1"></span><br>
+                    <input type="radio" name="ans" value="1" id="r2" class="a2"><span id="a2" class="a2"></span><br>
+                    <input type="radio" name="ans" value="2" id="r3" class="a3"><span id="a3" class="a3"></span><br>
                 </form>
-                <p class="questionStart"><b>OR Answer a questionnaire.</b></p>
-                <div class="fancy">
-                    <a class="fancy" href="./">Start Questionnaire</a>
-                </div>
-                <p class="questionStart"><b>OR Upload a file.</b></p>
-                <p id="keywords"></p>
+                <button class="fancy" onclick="processAnswer()">Continue</button>
+                <p id="feedback"></p>
             </div>
         </div>
     </body>
