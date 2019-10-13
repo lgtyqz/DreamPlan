@@ -5,7 +5,7 @@ var objectResponse = null;
 var keywords = url.searchParams.get("keywords");
 keywords = this.decodeURIComponent(keywords);
 
-var baseURL = "https://dreamplan.search.windows.net/indexes/catalog-json-index/docs?api-version=2019-05-06&queryType=full&search=" + keywords;
+var baseURL = "https://dreamplan.search.windows.net/indexes/catalog-json-index/docs?api-version=2019-05-06&search=" + keywords;
 var apiKey = new Headers();
 apiKey.append('api-key', "63686663099E6433AFC3694E2F0D22E0");
 apiKey.append('content-type', 'application/json');
@@ -16,7 +16,7 @@ var init = {
         "Content-Type": "application/json",
         "origin": "https://dreamplan.search.windows.net"
     },
-    mode: 'same-origin',
+    mode: 'cors',
 };
 var x = fetch(baseURL, init);
 console.log(x);
