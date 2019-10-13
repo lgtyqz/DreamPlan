@@ -3,26 +3,29 @@
     <head>
         <title>UW DreamPlan</title>
         <script src="main.js"></script>
+        <script src="form1.js"></script>
         <link rel="stylesheet" type="text/css" href="main.css">
         <link rel="stylesheet" type="text/css" href="form1.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap" rel="stylesheet">
     </head>
     <body>
         <div id="bgImageHolder"></div>
         <div id="formContainer">
             <div id="form">
                 <p class="questionStart"><b>Type some keywords.</b></p>
-                <!-- TODO: Put in a redirect for action attribute-->
                 <form>
-                    <textarea autofocus name="keywords" 
+                    <textarea autofocus id="keywords" name="keywords" 
                     placeholder="travel, creative, etc."></textarea>
-                    <button class="fancy">Create Schedule</button>
                 </form>
+                <button class="fancy" onclick="gatherKeywords()">Create Schedule</button>
+
+                <br><br>
+
                 <p class="questionStart"><b>OR Answer a questionnaire.</b></p>
                 <div class="fancy">
                     <a class="fancy" href="./questionnaire.html">Start Questionnaire</a>
                 </div>
-                <p class="questionStart"><b>OR Upload a file.</b></p>
-                <p id="keywords"></p>
+                <!--<p class="questionStart"><b>OR Upload a file.</b></p>-->
             </div>
         </div>
     </body>

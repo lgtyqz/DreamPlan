@@ -87,9 +87,9 @@ function processAnswer(){
         // questionnaire is finished.
         questionIndex++;
         if(questionIndex == questions.length - 1){
-            //Change button text from "Continue" to "Finish!"
+            document.getElementById("continue").innerHTML = "Finish!";
         }else if(questionIndex >= questions.length){
-            //Redirect to next page. Add URL parameters.
+            goToResults(subject.query);
         }else{
             displayQuestion();
         }

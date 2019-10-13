@@ -5,7 +5,8 @@
         <script src="main.js"></script>
         <script src="questionnaire.js"></script>
         <link rel="stylesheet" type="text/css" href="main.css">
-        <link rel="stylesheet" type="text/css" href="form1.css">
+        <link rel="stylesheet" type="text/css" href="questionnaire.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap" rel="stylesheet">
     </head>
     <body>
         <div id="bgImageHolder"></div>
@@ -18,7 +19,8 @@
                     <input type="radio" name="ans" value="1" id="r2" class="a2"><span id="a2" class="a2"></span><br>
                     <input type="radio" name="ans" value="2" id="r3" class="a3"><span id="a3" class="a3"></span><br>
                 </form>
-                <button class="fancy" onclick="processAnswer()">Continue</button>
+                <br>
+                <button class="fancy" id="continue" onclick="processAnswer()">Continue</button>
                 <p id="feedback"></p>
             </div>
         </div>

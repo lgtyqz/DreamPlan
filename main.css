@@ -1,7 +1,7 @@
 body {
     margin: 0;
     background-color: #DEDEDE;
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: Roboto, Arial, sans-serif;
 }
 #bgImageHolder {
     z-index: -10;
@@ -49,7 +49,7 @@ body {
 }
 
 p.title {
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: Open Sans, Helvetica, serif;
     font-size: 40px;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -60,6 +60,7 @@ p.title {
 p.questionStart {
     font-size: 25px;
     margin: 5px;
+    font-family: Open Sans, Helvetica, serif;
 }
 
 a#start {
