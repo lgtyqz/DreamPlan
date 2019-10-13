@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    background-color: #DEDEDE;
+    font-family: Helvetica, Arial, sans-serif;
+}
+#bgImageHolder {
+    z-index: -10;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-image: url("background.jpg");
+    background-color: "#FFFF00";
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.6;
+}
+
+#photoCredits {
+    position: fixed;
+    top: 95%;
+}
+
+#splashContainer {
+    position: absolute;
+    top: 35%;
+    left: 25%;
+    width: 45%;
+    height: 25%;
+    background-color: #EEEEEE;
+    border: 3px solid #555555;
+    padding: 2.5%;
+}
+
+#formContainer {
+    position: absolute;
+    top: 12.5%;
+    left: 10%;
+    width: 75%;
+    height: auto;
+    background-color: #EEEEEE;
+    border: 3px solid #555555;
+    padding: 2.5%;
+}
+
+#splash {
+    text-align: center;
+}
+
+p.title {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+p.questionStart {
+    font-size: 25px;
+    margin: 5px;
+}
+
+a#start {
+    text-decoration: none;
+}
+
+div.fancy {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+button.fancy, a.fancy {
+    -webkit-appearance: none;
+    padding: 10px;
+    font-size: 20px;
+    background-color: #FFFFFF;
+    color: #000000;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+button.fancy:hover, a.fancy:hover {
+    background-color: #000000;
+    color: #FFFFFF;
+}
