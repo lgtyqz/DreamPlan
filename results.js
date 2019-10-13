@@ -11,17 +11,23 @@ apiKey.append('api-key', "63686663099E6433AFC3694E2F0D22E0");
 apiKey.append('content-type', 'application/json');
 var init = {
     method: 'GET',
-    headers: apiKey,
+    headers: {
+        "api-key": "63686663099E6433AFC3694E2F0D22E0",
+        "Content-Type": "application/json"
+    },
     mode: 'no-cors'
 };
 var x = fetch(baseURL, init);
 x.then(
-    function(response){
-        document.getElementById("form").innerHTML = response;
-        objectResponse = response;
+    async function(response){
+        return response.text();
         //TODO: Format data
     }
-);
+).then(
+    (data) => {
+        console.log(data ? JSON.parse(data) : {});
+    }
+)
 /*window.onload = function(){
     document.getElementById("form").innerHTML = keywords;
 }*/
